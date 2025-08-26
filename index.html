@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Day Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <button id="playPause">▶ Play</button>
+    <div class="track" data-track="instruments">
+      <h3>Instruments</h3>
+      <button class="mute">Mute</button>
+      <input type="range" min="0" max="1" step="0.01" value="1" class="volume">
+    </div>
+    <div class="track" data-track="bass">
+      <h3>Bass</h3>
+      <button class="mute">Mute</button>
+      <input type="range" min="0" max="1" step="0.01" value="1" class="volume">
+    </div>
+    <div class="track" data-track="vocals">
+      <h3>Vocals</h3>
+      <button class="mute">Mute</button>
+      <input type="range" min="0" max="1" step="0.01" value="1" class="volume">
+    </div>
+    <div class="track" data-track="drums">
+      <h3>Drums</h3>
+      <button class="mute">Mute</button>
+      <input type="range" min="0" max="1" step="0.01" value="1" class="volume">
+    </div>
+  </div>
+
+  <audio id="instruments" src="sunny day_instruments.wav"></audio>
+  <audio id="bass" src="sunny day_bass.wav"></audio>
+  <audio id="vocals" src="sunny day_vocals.wav"></audio>
+  <audio id="drums" src="sunny day_drums.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
